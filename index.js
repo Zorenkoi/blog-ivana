@@ -7,8 +7,12 @@ import articlesRouter from './routers/articlesRouter.js'
 import commentsRouter from './routers/commentsRouter.js'
 import imagesRouter from './routers/imagesRouter.js'
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 4444
 const app = express()
+
+app.get('/', (req, res) => {
+  res.end(<h1>zalupka</h1>)
+})
 app.use(express.json())
 app.use(fileUpload())
 app.use(cors())
