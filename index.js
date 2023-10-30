@@ -20,7 +20,7 @@ app.use('/comments', commentsRouter)
 app.use('/images', imagesRouter)
 
 app.get('/', (req, res) => {
-  res.end(<h1>zalupka</h1>)
+  res.end('<h1>zalupka</h1>')
 })
 
 mongoose
